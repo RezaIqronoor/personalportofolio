@@ -1,0 +1,189 @@
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100vw;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.backgroundText {
+  position: absolute;
+  margin: auto;
+  z-index: 0;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20vw;
+  text-align: center;
+  color: #fafafa;
+  text-shadow: -1px 0 #E5E5E5, 0 1px #E5E5E5, 1px 0 #E5E5E5, 0 -1px #E5E5E5;
+}
+
+.homeTitle {
+  z-index: 1;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  text-align: center;
+
+  color: #333333;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.btnAboutMe {
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border: solid 1px #333333;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+.btnMyWorks {
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+/**
+
+ABOUT ME
+
+**/
+
+.aboutMe {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.aboutMeContent {
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 6.4rem 0rem 6.4rem
+}
+
+.aboutMeIntroduction {
+  flex: 1;
+  width: 50%;
+  padding: 0rem 8rem 0rem 8rem;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.025em;
+
+  color: #333333;
+}
+
+.aboutMeLogoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  padding: 0rem 8rem 0rem 8rem
+}
+
+.btnIcon, .btnIcon:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon {
+  height: 5.6rem;
+  width: 5.6rem;
+  border-radius: 5.6rem;
+  background-color: grey;
+}
+
+.iconName {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 1rem;
+}
+
+/**
+MY WORKS
+**/
+
+.myWorks {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 7px;
+  }
+
+  .backgroundText {
+    font-size: 24rem;
+    line-height: 24rem;
+    transform: rotate(-90deg);
+  }
+
+  .aboutMeContent {
+    height: 100%;
+    align-content: space-around;
+  }
+
+  .aboutMeIntroduction {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .aboutMeLogoContainer {
+    width: 100%;
+    padding: 0rem;
+  }
+}
