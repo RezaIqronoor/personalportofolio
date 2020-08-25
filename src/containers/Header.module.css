@@ -10,7 +10,7 @@
     z-index: 10;
 }
 
-.headerLogoText, .headerLogoText:visited {
+.headerLogoText, .headerLogoText:visited, .headerLogoText:hover {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 
-.headerMenu, .headerMenu:visited {
+.headerMenu, .headerMenu:visited, .headerMenu:hover {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: normal;

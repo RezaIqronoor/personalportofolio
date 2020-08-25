@@ -80,7 +80,7 @@ const _Main = ({ }) => {
             <div className={s.myWorks} id="myWorks">
                 {/** Background Text */}
                 <span className={s.backgroundText}>
-                    MY WORKS
+                    MYWORKS<br/>MYWORKS
                 </span>
                 {/** Background Text */}
                 <div className={s.myWorksContent}>
@@ -90,7 +90,7 @@ const _Main = ({ }) => {
                     <Carousel className={s.carousel}>
                         <Carousel.Item className={s.carousel}>
                             <img
-                                className="d-block w-100"
+                                className={s.carouselImg}
                                 src="https://images8.alphacoders.com/840/840677.jpg"
                                 alt="First slide"
                             />
@@ -101,7 +101,7 @@ const _Main = ({ }) => {
                         </Carousel.Item>
                         <Carousel.Item className={s.carousel}>
                             <img
-                                className="d-block w-100"
+                                className={s.carouselImg}
                                 src="https://images8.alphacoders.com/840/840677.jpg"
                                 alt="Third slide"
                             />
@@ -112,6 +112,18 @@ const _Main = ({ }) => {
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
+                </div>
+            </div>
+
+            {/** Thank You Message */}
+            <div className={s.thanksMessage}>
+                {/** Background Text */}
+                <span className={s.thanksMessageBackgroundText}>
+                    THANK YOU FOR COMING
+                </span>
+                {/** Background Text */}
+                <div className={s.thanksMessageContent}>
+                     <span className={s.thanksMessageText}>THANK YOU<br/>FOR<br/>VISITING<br/>MY WEBSITE</span>
                 </div>
             </div>
         </div>
